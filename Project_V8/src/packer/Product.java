@@ -35,8 +35,9 @@ public class Product {
     /**
      * @return the hazardous
      */
+    //replaced false with hazardous so items can return hazardous when ProductTest.java is started
     public boolean isHazardous() {
-        return false;
+        return hazardous;
     }
 
     /**

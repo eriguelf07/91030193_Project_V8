@@ -25,14 +25,21 @@ public class Customer {
     public String getName() {
         return name;
     }
-
+    //ERROR IS DEFINETELY HERE
+    //TRIED AGAIN GOING WITH GOEMETRICAL APPROACH: (X1(SQUARED) + Y1(SQUARED)) - (X2(SQUARED) + Y2(SQUARED)), XY2(SQUARED) - XY2(SQUARED) IS THE DISTANCE.
+    //STILL DIDNT WORK.. MAYBE THERE IS SOMETHING WRONG WITH MY CALCULATIONS
+    //FFS HOW DOES THIS WORK
     public Address getClosestAddressTo(Depot d) {
-        double bestDistance = Double.MAX_VALUE;
+        //WAS EXPERIMENTING WITH VARIABLES AND SAW THAT bestDistanceXY does not get used anymore..(assumed that best distance is the closest distance)
+        double bestDistanceXY = Double.MAX_VALUE;
         Address bestAddress = null;
         for (Address a : addresses) {
             double distance = a.getCoordinates().companyDistanceTo(d.getCoordinates());
-            if (distance < bestDistance) {
+            if (distance < bestDistanceXY) {
                 bestAddress = a;
+                //if i corretly understand it: a.getCoordinates - d.getCoordinates = whats left(distance)= bestDistanceXY 
+                //Tested CoordinatesTest.java and it WORKED FFS I SPENT A DAY ON JUST THIS
+                bestDistanceXY = distance;
             }
         }
         return bestAddress;

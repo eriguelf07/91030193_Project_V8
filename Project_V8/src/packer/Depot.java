@@ -12,9 +12,10 @@ public class Depot {
         this.name = name;
         this.address = address;
     }
-    
+     //REMOVED ADDRESS.TOSTRING() AND REPLACED WITH NAME
+    //This Enabled me to extract the depo name to depotest.java
     public String getName() {
-        return address.toString();
+        return name;
     }
     
     public Coordinates getCoordinates() {
