@@ -87,11 +87,27 @@ public class BoxTest {
      */
     @Test
     public void testGetWeight() {
+        //PRODUCTS
+        Product p1 = new Product("x1", 4, false, false);
+        Product p2 = new Product("x2", 5, false, false);
+        Product p3 = new Product("x3", 6, false, false);
         System.out.println("getWeight");
-        Box instance = null;
-        double expResult = 0.0;
-        double result = instance.getWeight();
-        assertEquals(expResult, result, 0.0);
+
+        //VARIABLES 1
+        double expResult1 = 4;
+        double result1 = p1.getWeight();
+        //VARIABLES 2
+        double expResult2 = 5;
+        double result2 = p2.getWeight();
+        //VARIABLES 3
+        double expResult3 = 6;
+        double result3 = p3.getWeight();
+        //TEST1
+        assertEquals(expResult1, result1, 0.0);
+        //TEST2
+        assertEquals(expResult2, result2, 0.0);
+        //TEST3
+        assertEquals(expResult3, result3, 0.0);
         // TODO review the generated test code and remove the default call to fail.
     
     }
@@ -133,7 +149,7 @@ public class BoxTest {
     @Test
     public void testRemainingCapacity() {
         System.out.println("remainingCapacity");
-      
+        
         Box instance = null;
         double expResult = 0.0;
         double result = instance.remainingCapacity();

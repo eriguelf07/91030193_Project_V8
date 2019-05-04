@@ -13,6 +13,8 @@ import packer.DepotTest;
 import packer.ProductTest;
 import packer.PackerTest;
 import packer.BoxTest;
+import packer.ProductWeightComparatorTest;
+import packer.ManifestTest;
 
 
 
@@ -28,7 +30,8 @@ import packer.BoxTest;
     ProductTest.class,
     CustomerTest.class,
     PackerTest.class,
-    BoxTest.class
+    BoxTest.class,
+    ManifestTest.class
 })
 
 public class TestSuite {
