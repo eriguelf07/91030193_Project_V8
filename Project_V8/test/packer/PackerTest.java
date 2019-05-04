@@ -36,7 +36,9 @@ public class PackerTest {
     /**
      * Test of packProducts method, of class Packer.
      */
+    
     //IGNORE THIS, THIS IS JUST WHERE I DRAW ADDRESSES FROM
+    /*
     public class TestData{
     Coordinates testCoordinates0 = new Coordinates(0,0);
     Coordinates testCoordinates1 = new Coordinates(3,4);
@@ -55,6 +57,7 @@ public class PackerTest {
     
     Customer c2 = new Customer("T3",testAddress3);
     }
+*/
     
     @Test
     public void testPackProducts() {
@@ -73,7 +76,7 @@ public class PackerTest {
         Address testAddress3 = new Address("321 Back St", "Christly", "Holly Oaks", "C333", testCoordinates3);
         Customer c3 = new Customer("C3",testAddress3);
         
-        //DEPOTS
+        //DEPOT
         Coordinates testCoordinates0 = new Coordinates(0,0);
         Address testAddress0 = new Address("111 Emerge Rd", "Really", "Inn Town", "D444", testCoordinates0);
         Depot d = new Depot("Test Depot", testAddress0);
