@@ -11,7 +11,7 @@ import java.util.TreeSet;
  */
 public class Manifest {
     
-    // This tracks the quantity if each product in the manifest
+    // This tracks the quantity of each product in the manifest
     private Map<Product, Integer> quantities;
     // This keeps a list of all products ordered by weight
     private Set<Product> byWeight;
