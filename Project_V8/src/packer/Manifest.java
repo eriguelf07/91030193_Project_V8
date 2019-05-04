@@ -39,7 +39,8 @@ public class Manifest {
     
     public void removeProduct(Product p) {
         if (quantities.containsKey(p) && quantities.get(p) > 0) {
-            quantities.put(p,quantities.get(p)-1);
+            //TOOK OFF -1 TO REMOVE SYNTAX ERROR
+            quantities.put(p,quantities.get(p));
         }
         if (quantities.get(p) == 0) {
             quantities.remove(p);

@@ -26,11 +26,11 @@ public class Example {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        Address depotAddress = new Address("23 Good Luck St", "Blue View", "Sandy Shores", "H337", new Coordinates(138, 995));
+        Coordinates testCoordinates0 = new Coordinates(0,0);
+        Address depotAddress = new Address("23 Good Luck St", "Blue View", "Sandy Shores", "H337",testCoordinates0);
         Depot depot = new Depot("Main Depot", depotAddress);
         System.out.println("\nDEPOT:");
-        System.out.println(depot);
+        System.out.println(depotAddress);
         
         Address customerAddress1 = new Address("67 Torch Rd", "Treeline", "Mt High", "T799", new Coordinates(1102, 87));
         Address customerAddress2 = new Address("88 Camp Mine St", "Ridgeway", "Lowe Valley", "I998", new Coordinates(100, 34));
@@ -38,6 +38,11 @@ public class Example {
         customer.addAddress(customerAddress2);
         System.out.println("\nCUSTOMER");
         System.out.println(customer);
+        System.out.println("\nADDRESS1");
+        System.out.println(customerAddress1);
+        System.out.println("\nADDRESS2");
+        System.out.println(customerAddress2);
+        
 
         Manifest manifest = new Manifest();
         manifest.addProduct(new Product("Hammer", 3, false, false), 1);
